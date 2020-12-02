@@ -1,6 +1,7 @@
 # Identicon
 
-**TODO: Add description**
+**Description**
+An Elixir program which generates an identicon
 
 ## Installation
 
@@ -12,6 +13,12 @@ def deps do
   [
     {:identicon, "~> 0.1.0"}
   ]
+end
+```
+Ensure identicon is started before your application:
+```elixir
+def application do
+  [applications: [:identicon]]
 end
 ```
 
